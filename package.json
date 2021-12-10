@@ -1,0 +1,9 @@
+{
+  "name": "scenary-03",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "generate": "node src/app.js"
+  }
+}
