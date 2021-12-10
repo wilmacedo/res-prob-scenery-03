@@ -7,15 +7,15 @@ let step = 0;
 const runSteps = () => {
   switch (step) {
     case 0:
-      const { error } = verify(sentence);
-
-      if (error) {
-        throw Error(error);
+      const verified = verify(sentence);
+      if (verified) {
+        step++;
       }
-
-      step++;
     case 1:
-      analyzer(sentence);
+      const analyzed = analyzer(sentence);
+      if (analyzed) {
+        step++;
+      }
   }
 };
 
