@@ -1,5 +1,5 @@
-const symbols = ['~', '^', 'v', '&', '>', '-', '(', ')'];
-const letters = ['p', 'q', 'r'];
+const symbols = ['~', '^', 'v', '>', '-', '(', ')'];
+const letters = ['p', 'q', 'r', 's'];
 
 const verify = sentence => {
   sentence.split('').forEach(char => {
@@ -11,4 +11,8 @@ const verify = sentence => {
   return true;
 };
 
-module.exports = verify;
+module.exports = {
+  symbols,
+  letters,
+  verify,
+};

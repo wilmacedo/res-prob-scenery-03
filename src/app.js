@@ -1,7 +1,7 @@
-const verify = require('./verify');
+const { verify } = require('./verify');
 const analyzer = require('./analyzer');
 
-const sentence = 'p&(q^r)-(p&q)^(p&r)';
+const sentence = 'pv(q^r)-(pvq)^(pvr)';
 let step = 0;
 
 const runSteps = () => {
